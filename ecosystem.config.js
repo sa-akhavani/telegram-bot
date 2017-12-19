@@ -23,18 +23,18 @@ module.exports = {
   deploy : {
     production : {
       user : 'ali',
-      host: 'localhost',
+      host: '165.227.169.90',
       ref  : 'origin/master',
       repo : 'git@github.com:sa-akhavani/telegram-bot.git',
-      path: '/home/ali/tmp/basse-dige-bot/app.js',
+      path: '/home/ali/basse_bot_deploy',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
     dev : {
       user : 'ali',
-      host: '192.168.111.103',
+      host: 'localhost',
       ref  : 'origin/master',
       repo : 'git@github.com:sa-akhavani/telegram-bot.git',
-      path : '/var/www/development',
+      path: '/tmp/basse_bot_deploy',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
       env  : {
         NODE_ENV: 'dev'

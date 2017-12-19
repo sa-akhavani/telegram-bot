@@ -10,13 +10,13 @@ bot.on('text', (msg) => {
   let firstName = msg.from.first_name;
   console.log(msg.from.id);
   let lastName = msg.from.last_name;
-  // msg.reply.text('سلام ' + firstName + ' ' + lastName);
-  // return bot.sendMessage('87799087', 'سلام من بات فلانی‌ام');
-});
-bot.on('sticker', (msg) => {
-  msg.reply.text('استیکر نده دیوث')
+  return msg.reply.text('سلام ' + firstName + ' ' + lastName);
 });
 
-bot.sendMessage('87799087', 'سلام من بات فلانی‌ام');
+bot.on('sticker', (msg) => {
+  msg.reply.text('استیکر زیباییه')
+});
+
+bot.sendMessage('@rajabzz', 'سلام من بات فلانی‌ام');
 
 bot.start();

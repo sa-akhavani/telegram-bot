@@ -11,7 +11,7 @@ bot.on('text', (msg) => {
     if (msg.from.id === 86530693) {
       bot.sendMessage(chatId, 'هومن جان قار نکش!');
     } else {
-      bot.sendMessage(chatId, 'https://t.me/khodaya_basse_dige/3');
+      bot.forwardMessage(chatId, -1001384114403, 3);
     }
   }
 });

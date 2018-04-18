@@ -8,7 +8,11 @@ bot.on('text', (msg) => {
   let text = msg.text;
   let chatId = msg.chat.id;
   if (text.search('بسه دیگه') !== -1) {
-    bot.sendMessage(chatId, 'https://t.me/khodaya_basse_dige/3');
+    if (msg.from.id === 86530693) {
+      bot.sendMessage(chatId, 'هومن جان قار نکش!');
+    } else {
+      bot.sendMessage(chatId, 'https://t.me/khodaya_basse_dige/3');
+    }
   }
 });
 

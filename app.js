@@ -1,7 +1,7 @@
 'use strict';
 const telebot = require('telebot');
 const bot = new telebot({
-  token: '502610414:AAHsvFIPh7hgebc5AMoJf5dlclyHxLawK9E',
+  token: 'HAHA! Revoked Previous Token',
 });
 
 bot.on('text', (msg) => {
